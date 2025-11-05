@@ -9,12 +9,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class Logging {
 
-    @Before("execution(public void springaoptut.service.UserService.logIn())")
+    @Before("execution(public void org.example.service.UserService.logIn())")
     public void loggingAdvice1() {
         System.out.println("Running Before Advice for LogIn");
     }
 
-    @After("execution(public void springaoptut.service.UserService.logIn())")
+    @After("execution(public void org.example.service.UserService.logIn())")
     public void loggingAdvice2() {
         System.out.println("Running After Advice for Login");
     }
